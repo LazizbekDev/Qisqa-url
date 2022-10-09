@@ -8,7 +8,7 @@ app.get('/test', function (req, res) {
 });
 
 app.get('/', (req, res) => {
-    html = fs.readFileSync('index.html');
+    let html = fs.readFileSync('index.html');
     res.writeHead(200);
     res.write(html);
     res.end();
